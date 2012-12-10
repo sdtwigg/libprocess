@@ -1,8 +1,8 @@
 # Generated with autoscan, then modified appropriately.
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.61])
-AC_INIT([libprocess], [0.0.1])
+AC_PREREQ([2.68])
+AC_INIT([libprocess],[0.0.1])
 
 # Have autoconf setup some variables related to the system.
 AC_CANONICAL_HOST

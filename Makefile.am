@@ -95,6 +95,7 @@ check_PROGRAMS = tests
 tests_SOURCES = src/tests.cpp src/statistics_tests.cpp
 tests_CPPFLAGS = -I$(GTEST)/include -I$(GMOCK)/include	\
 	$(libprocess_la_CPPFLAGS)
-tests_LDADD = third_party/libgmock.la libprocess.la
+tests_LDADD = third_party/libgmock.la libprocess.la $(GLOG)/libglog.la \
+	third_party/libry_http_parser.la $(LIBEV)/libev.la
 
 # TODO(benh): Fix shared builds (tests need libglog, libev, etc).
